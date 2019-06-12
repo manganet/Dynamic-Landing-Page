@@ -45,12 +45,12 @@ function setBgGreet() {
     greeting.textContent = "Good Morning, ";
   } else if (hour < 18) {
     // Afternoon
-    document.body.style.backgroundImage =
+    document.body.style.background =
       "url('https://i.ibb.co/3mThcXc/afternoon.jpg') no-repeat center fixed";
     greeting.textContent = "Good Afternoon, ";
   } else {
     // Evening
-    document.body.style.backgroundImage =
+    document.body.style.background =
       "url('https://i.ibb.co/924T2Wv/night.jpg') no-repeat center fixed";
     greeting.textContent = "Good Evening, ";
     document.body.style.color = "white";

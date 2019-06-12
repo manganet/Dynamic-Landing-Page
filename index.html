@@ -9,31 +9,34 @@
       href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
       rel="stylesheet"
     />
+
     <title>Welcome</title>
   </head>
   <body>
-    <time id="time"></time>
-    <h1>
-      <span id="greeting"></span>
-      <span id="name" contenteditable="true"></span>
-    </h1>
+    <div>
+      <time id="time"></time>
+      <h1>
+        <span id="greeting"></span>
+        <span id="name" contenteditable="true"></span>
+      </h1>
 
-    <h2>What Is Your Focus For Today?</h2>
-    <h2 id="focus" contenteditable="true"></h2>
-
-    <gcse:search></gcse:search>
-
+      <h2>What Is Your Focus For Today?</h2>
+      <h2 id="focus" contenteditable="true"></h2>
+    </div>
+    <div>
+      <script>
+        (function() {
+          var cx = "010560724838265545322:ikob1rfqwqo";
+          var gcse = document.createElement("script");
+          gcse.type = "text/javascript";
+          gcse.async = true;
+          gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search enableAutoComplete="true"></gcse:search>
+    </div>
     <script src="js/main.js"></script>
-    <script>
-      (function() {
-        var cx = "123:456"; // Insert your own Custom Search engine ID here
-        var gcse = document.createElement("script");
-        gcse.type = "text/javascript";
-        gcse.async = true;
-        gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
   </body>
 </html>
