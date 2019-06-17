@@ -38,11 +38,16 @@ function setBgGreet() {
   let today = new Date(),
     hour = today.getHours();
 
-  if (hour < 12) {
+  if (hour < 11) {
     // Morning
     document.body.style.background =
       "url('https://i.ibb.co/7vDLJFb/morning.jpg') no-repeat center fixed";
     greeting.textContent = "Good Morning, ";
+  } else if (hour < 14) {
+    // Afternoon
+    document.body.style.background =
+      "url('https://ibb.co/JmwsqZf') no-repeat center fixed";
+    greeting.textContent = "Good Afternoon, ";
   } else if (hour < 18) {
     // Afternoon
     document.body.style.background =
