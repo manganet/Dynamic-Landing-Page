@@ -47,7 +47,8 @@ function setBgGreet() {
     // Afternoon
     document.body.style.background =
       "url('https://i.ibb.co/17tmMcD/6a00d8341d8a0f53ef017ee57b6850970d.jpg') no-repeat center fixed";
-    greeting.textContent = "Good Afternoon, ";
+    greeting.textContent = "Good Morning, ";
+    document.body.style.color = "white";
   } else if (hour < 18) {
     // Afternoon
     document.body.style.background =
