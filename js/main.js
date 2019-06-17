@@ -46,7 +46,7 @@ function setBgGreet() {
   } else if (hour < 14) {
     // Afternoon
     document.body.style.background =
-      "url('https://ibb.co/JmwsqZf') no-repeat center fixed";
+      "url('https://i.ibb.co/17tmMcD/6a00d8341d8a0f53ef017ee57b6850970d.jpg') no-repeat center fixed";
     greeting.textContent = "Good Afternoon, ";
   } else if (hour < 18) {
     // Afternoon
